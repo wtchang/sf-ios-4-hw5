@@ -23,7 +23,7 @@ Assignment (code, resources, project file) posted on Github
 Due Date: Wednesday, January 27.
 
 ## Suggested Ways to Get Started
-* Review the lesson slides
+* Review the [lesson slides for protocols & delegates](https://github.com/ga-students/sf-ios-4/blob/master/resources/slides/lesson-10.pdf)
 * Look around the project and familiarize yourself with the storyboard including all screens and any outlets and actions.
 * Add comments inside the code for where you'll want to implement the steps above.
 
