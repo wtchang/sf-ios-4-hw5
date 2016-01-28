@@ -18,6 +18,7 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     
     var delegate:TodoSaver?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
