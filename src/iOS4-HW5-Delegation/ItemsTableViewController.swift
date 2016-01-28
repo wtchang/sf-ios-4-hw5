@@ -8,44 +8,51 @@
 
 import UIKit
 
-class ItemsTableViewController: UITableViewController {
+class ItemsTableViewController: UITableViewController, TodoSaver {
 
-    var items:[String] = []
+    var items:[Todo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    //5. conform to protocol
+    // MARK: - Todo saver
+    
+    func saveTodo(todo: Todo) {
+        //add this to the todos array
+        items.append(todo)
+        //refresh the tableview
+        tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("itemCellIdentifier", forIndexPath: indexPath)
-    
-        cell.textLabel?.text = items[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("todoCellIdentifier", forIndexPath: indexPath) as! TodoTableViewCell
+        let todo = items[indexPath.row]
+        cell.titleLabel?.text = todo.title
+        cell.descriptionLabel?.text = todo.description
         
         return cell
     }
-
-    /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let addTodoViewController = segue.destinationViewController as! AddItemViewController
+        addTodoViewController.delegate=self
+        
+        //6. pass self as delegate
     }
-    */
-
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96AABC0E1C598F810092D40F /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AABC0D1C598F810092D40F /* Todo.swift */; };
+		96AABC101C5991160092D40F /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AABC0F1C5991160092D40F /* TodoTableViewCell.swift */; };
 		D127505E1C506C56002A9B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127505D1C506C56002A9B2E /* AppDelegate.swift */; };
 		D12750631C506C56002A9B2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12750611C506C56002A9B2E /* Main.storyboard */; };
 		D12750651C506C56002A9B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12750641C506C56002A9B2E /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96AABC0D1C598F810092D40F /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		96AABC0F1C5991160092D40F /* TodoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		D127505A1C506C56002A9B2E /* iOS4-HW5-Delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS4-HW5-Delegation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D127505D1C506C56002A9B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D12750621C506C56002A9B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				D12750711C506CCF002A9B2E /* ItemsTableViewController.swift */,
+				96AABC0D1C598F810092D40F /* Todo.swift */,
 				D127506F1C506CC0002A9B2E /* AddItemViewController.swift */,
 				D12750611C506C56002A9B2E /* Main.storyboard */,
 				D12750641C506C56002A9B2E /* Assets.xcassets */,
 				D12750661C506C56002A9B2E /* LaunchScreen.storyboard */,
 				D127505D1C506C56002A9B2E /* AppDelegate.swift */,
 				D12750691C506C56002A9B2E /* Info.plist */,
+				96AABC0F1C5991160092D40F /* TodoTableViewCell.swift */,
 			);
 			path = "iOS4-HW5-Delegation";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				D127505E1C506C56002A9B2E /* AppDelegate.swift in Sources */,
 				D12750701C506CC0002A9B2E /* AddItemViewController.swift in Sources */,
 				D12750721C506CCF002A9B2E /* ItemsTableViewController.swift in Sources */,
+				96AABC101C5991160092D40F /* TodoTableViewCell.swift in Sources */,
+				96AABC0E1C598F810092D40F /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,7 @@
 				D127506E1C506C56002A9B2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
